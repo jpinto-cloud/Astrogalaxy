@@ -1,0 +1,40 @@
+/* Astrogalaxy — Estilos de la landing
+   Fuentes: Bricolage Grotesque (títulos) + DM Sans (texto) */
+
+*{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:'DM Sans',system-ui,sans-serif;color:#13241B;background:#F1F7EE;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#6EE7B7;color:#06281A;}
+
+  /* Animaciones */
+  @keyframes agFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+  @keyframes agFloatSlow{0%,100%{transform:translateY(0);}50%{transform:translateY(11px);}}
+
+  /* Estados hover */
+  .navlink{transition:color .15s;}
+  .navlink:hover{color:#0D9488;}
+  .footlink{transition:color .15s;}
+  .footlink:hover{color:#0D6B4F;}
+  .btn-lift{transition:transform .15s;}
+  .btn-lift:hover{transform:translateY(-2px);}
+  .btn-outline{transition:border-color .15s;}
+  .btn-outline:hover{border-color:#0D9488;}
+
+  /* Navegación responsive */
+  .nav-desktop{display:flex;}
+  .nav-actions{display:flex;}
+  .nav-toggle{display:none;}
+  .mobile-menu{display:none;flex-direction:column;gap:6px;border-top:1px solid #DCE7D6;background:#F1F7EE;padding:14px 24px 20px;}
+  .mobile-menu.open{display:flex;}
+  @media(max-width:920px){
+    .nav-desktop{display:none;}
+    .nav-actions{display:none;}
+    .nav-toggle{display:inline-flex;}
+  }
+
+  /* Conmutador del dashboard */
+  .dash-tab{flex:1;text-align:center;padding:10px 18px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;transition:all .15s;background:transparent;color:#5B7A66;}
+  .dash-tab.active{background:#fff;color:#0C2A1E;box-shadow:0 2px 8px rgba(12,42,30,0.14);}
+  .ag-dashview{display:none;margin-top:22px;}
+  .ag-dashview.show{display:block;}
