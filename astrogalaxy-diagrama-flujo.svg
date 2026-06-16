@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" viewBox="0 0 680 1400"
+  font-family="system-ui, -apple-system, sans-serif" font-size="14">
+
+  <title>Diagrama de flujo Astrogalaxy</title>
+  <desc>Flujo completo: registro de usuario con nombre e institución educativa, retos ambientales por niveles, verificación IA y entrega de NFTs.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .label-main { font-size:14px; font-weight:600; fill:#2C2C2A; text-anchor:middle; dominant-baseline:central; }
+      .label-sub  { font-size:12px; font-weight:400; fill:#5F5E5A; text-anchor:middle; dominant-baseline:central; }
+      .label-sm   { font-size:11px; font-weight:400; fill:#5F5E5A; text-anchor:middle; dominant-baseline:central; }
+      .arr        { stroke:#888780; stroke-width:1; fill:none; marker-end:url(#arrow); }
+      /* node colors */
+      .node-gray   { fill:#F1EFE8; stroke:#888780; stroke-width:0.5; }
+      .node-blue   { fill:#E6F1FB; stroke:#185FA5; stroke-width:0.5; }
+      .node-teal   { fill:#E1F5EE; stroke:#0F6E56; stroke-width:0.5; }
+      .node-green  { fill:#EAF3DE; stroke:#3B6D11; stroke-width:0.5; }
+      .node-amber  { fill:#FAEEDA; stroke:#854F0B; stroke-width:0.5; }
+      .node-purple { fill:#EEEDFE; stroke:#534AB7; stroke-width:0.5; }
+      .node-coral  { fill:#FAECE7; stroke:#993C1D; stroke-width:0.5; }
+      .text-blue   { fill:#0C447C; }
+      .text-teal   { fill:#085041; }
+      .text-green  { fill:#27500A; }
+      .text-amber  { fill:#633806; }
+      .text-purple { fill:#3C3489; }
+      .text-coral  { fill:#712B13; }
+      .text-gray   { fill:#444441; }
+      .sub-blue    { fill:#185FA5; }
+      .sub-teal    { fill:#0F6E56; }
+      .sub-green   { fill:#3B6D11; }
+      .sub-amber   { fill:#854F0B; }
+      .sub-purple  { fill:#534AB7; }
+      .sub-coral   { fill:#993C1D; }
+      .sub-gray    { fill:#5F5E5A; }
+      .section-bar { fill:#534AB7; opacity:0.12; }
+      .section-teal-bar { fill:#0F6E56; opacity:0.12; }
+    </style>
+  </defs>
+
+  <!-- ═══ SECCIÓN REGISTRO ═══ -->
+  <rect class="section-bar" x="160" y="12" width="360" height="10" rx="5"/>
+  <text class="label-sm" x="340" y="34" fill="#534AB7">Registro de usuario</text>
+
+  <!-- Inicio -->
+  <rect class="node-gray" x="250" y="44" width="180" height="44" rx="22"/>
+  <text class="label-main text-gray" x="340" y="66">Inicio: nueva cuenta</text>
+
+  <line class="arr" x1="340" y1="88" x2="340" y2="116"/>
+
+  <!-- Ingresa nombre -->
+  <rect class="node-blue" x="210" y="116" width="260" height="56" rx="8"/>
+  <text class="label-main text-blue" x="340" y="136">Ingresa su nombre</text>
+  <text class="label-sub sub-blue" x="340" y="156">Nombre y apellido del usuario</text>
+
+  <line class="arr" x1="340" y1="172" x2="340" y2="200"/>
+
+  <!-- Ingresa institución -->
+  <rect class="node-blue" x="185" y="200" width="310" height="56" rx="8"/>
+  <text class="label-main text-blue" x="340" y="220">Ingresa institución educativa</text>
+  <text class="label-sub sub-blue" x="340" y="240">Nombre del colegio o universidad</text>
+
+  <line class="arr" x1="340" y1="256" x2="340" y2="284"/>
+
+  <!-- ¿Datos completos? -->
+  <polygon class="node-gray" points="340,284 430,320 340,356 250,320"/>
+  <text class="label-main text-gray" x="340" y="314">¿Datos completos?</text>
+  <text class="label-sub sub-gray" x="340" y="332">Nombre + institución</text>
+
+  <!-- NO → reingresar -->
+  <path class="arr" d="M250 320 L100 320 L100 144 L208 144"/>
+  <text class="label-sm" x="78" y="238" text-anchor="middle">Faltan datos</text>
+
+  <!-- SÍ → cuenta creada -->
+  <line class="arr" x1="340" y1="356" x2="340" y2="384"/>
+  <text class="label-sm" x="362" y="373" text-anchor="start">Completo</text>
+
+  <rect class="node-green" x="210" y="384" width="260" height="56" rx="8"/>
+  <text class="label-main text-green" x="340" y="404">Cuenta creada</text>
+  <text class="label-sub sub-green" x="340" y="424">Perfil con nombre e institución</text>
+
+  <!-- ═══ SEPARADOR ═══ -->
+  <line x1="160" y1="456" x2="520" y2="456" stroke="#888780" stroke-width="0.5" stroke-dasharray="4 4"/>
+  <rect class="section-teal-bar" x="160" y="462" width="360" height="10" rx="5"/>
+  <text class="label-sm" x="340" y="480" fill="#0F6E56">Retos ambientales</text>
+
+  <line class="arr" x1="340" y1="440" x2="340" y2="490"/>
+
+  <!-- ═══ SECCIÓN RETOS ═══ -->
+
+  <!-- Selecciona nivel -->
+  <rect class="node-teal" x="210" y="490" width="260" height="56" rx="8"/>
+  <text class="label-main text-teal" x="340" y="510">Selecciona nivel de retos</text>
+  <text class="label-sub sub-teal" x="340" y="530">Nivel 1 · Nivel 2 · Nivel 3…</text>
+
+  <line class="arr" x1="340" y1="546" x2="340" y2="574"/>
+
+  <!-- Visualiza reto -->
+  <rect class="node-teal" x="210" y="574" width="260" height="56" rx="8"/>
+  <text class="label-main text-teal" x="340" y="594">Visualiza reto ambiental</text>
+  <text class="label-sub sub-teal" x="340" y="614">Descripción + complejidad + puntos</text>
+
+  <line class="arr" x1="340" y1="630" x2="340" y2="658"/>
+
+  <!-- Acepta reto -->
+  <rect class="node-green" x="230" y="658" width="220" height="44" rx="8"/>
+  <text class="label-main text-green" x="340" y="680">Usuario acepta el reto</text>
+
+  <line class="arr" x1="340" y1="702" x2="340" y2="730"/>
+
+  <!-- Realiza acción -->
+  <rect class="node-green" x="195" y="730" width="290" height="56" rx="8"/>
+  <text class="label-main text-green" x="340" y="750">Realiza acción ambiental</text>
+  <text class="label-sub sub-green" x="340" y="770">Plantar árbol · Reciclar · Limpiar…</text>
+
+  <line class="arr" x1="340" y1="786" x2="340" y2="814"/>
+
+  <!-- Sube evidencia -->
+  <rect class="node-amber" x="210" y="814" width="260" height="56" rx="8"/>
+  <text class="label-main text-amber" x="340" y="834">Sube evidencia fotográfica</text>
+  <text class="label-sub sub-amber" x="340" y="854">Foto o video de la acción</text>
+
+  <line class="arr" x1="340" y1="870" x2="340" y2="898"/>
+
+  <!-- IA verifica -->
+  <rect class="node-purple" x="195" y="898" width="290" height="56" rx="8"/>
+  <text class="label-main text-purple" x="340" y="918">IA verifica la evidencia</text>
+  <text class="label-sub sub-purple" x="340" y="938">Comprueba foto real y válida</text>
+
+  <line class="arr" x1="340" y1="954" x2="340" y2="986"/>
+
+  <!-- ¿Evidencia válida? -->
+  <polygon class="node-gray" points="340,986 430,1022 340,1058 250,1022"/>
+  <text class="label-main text-gray" x="340" y="1016">¿Evidencia válida?</text>
+  <text class="label-sub sub-gray" x="340" y="1034">IA aprueba o rechaza</text>
+
+  <!-- NO → rechazada -->
+  <path class="arr" d="M250 1022 L130 1022 L130 842 L208 842"/>
+  <text class="label-sm" x="100" y="1014" text-anchor="middle">No válida</text>
+  <rect class="node-coral" x="38" y="988" width="104" height="68" rx="8"/>
+  <text class="label-main text-coral" x="90" y="1012">Rechazada</text>
+  <text class="label-sub sub-coral" x="90" y="1032">Reintentar foto</text>
+
+  <!-- SÍ → puntos -->
+  <line class="arr" x1="340" y1="1058" x2="340" y2="1086"/>
+  <text class="label-sm" x="362" y="1075" text-anchor="start">Válida</text>
+
+  <!-- Otorga puntos -->
+  <rect class="node-amber" x="195" y="1086" width="290" height="56" rx="8"/>
+  <text class="label-main text-amber" x="340" y="1106">Se otorgan puntos</text>
+  <text class="label-sub sub-amber" x="340" y="1126">Según complejidad del reto</text>
+
+  <line class="arr" x1="340" y1="1142" x2="340" y2="1170"/>
+
+  <!-- ¿Nivel completado? -->
+  <polygon class="node-gray" points="340,1170 430,1206 340,1242 250,1206"/>
+  <text class="label-main text-gray" x="340" y="1200">¿Nivel completado?</text>
+  <text class="label-sub sub-gray" x="340" y="1218">Todos los retos del nivel</text>
+
+  <!-- NO → siguiente reto -->
+  <path class="arr" d="M430 1206 L560 1206 L560 592 L472 592"/>
+  <text class="label-sm" x="570" y="1200" text-anchor="start">No aún</text>
+
+  <!-- SÍ → NFT -->
+  <line class="arr" x1="340" y1="1242" x2="340" y2="1270"/>
+  <text class="label-sm" x="362" y="1259" text-anchor="start">Nivel completo</text>
+
+  <!-- NFT -->
+  <rect class="node-purple" x="185" y="1270" width="310" height="56" rx="8"/>
+  <text class="label-main text-purple" x="340" y="1290">NFT desbloqueada</text>
+  <text class="label-sub sub-purple" x="340" y="1310">Se entrega NFT del nivel completado</text>
+
+  <line class="arr" x1="340" y1="1326" x2="340" y2="1354"/>
+
+  <!-- ¿Más niveles? -->
+  <polygon class="node-gray" points="340,1354 416,1374 340,1394 264,1374"/>
+  <text class="label-main text-gray" x="340" y="1372">¿Hay más niveles?</text>
+
+  <!-- Sí → siguiente nivel -->
+  <path class="arr" d="M416 1374 L630 1374 L630 508 L472 508"/>
+  <text class="label-sm" x="636" y="1370" text-anchor="start">Si</text>
+
+  <!-- No → colección completa -->
+  <text class="label-sm" x="340" y="1395" fill="#534AB7">No · Coleccion completa</text>
+
+</svg>
