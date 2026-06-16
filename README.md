@@ -6,8 +6,9 @@
 ### *Donde la conciencia ambiental se convierte en una aventura galáctica*
 
 [![ODS 13](https://img.shields.io/badge/ODS%2013-Acción%20por%20el%20Clima-brightgreen?style=for-the-badge&logo=leaf&logoColor=white)](https://sdgs.un.org/goals/goal13)
-[![Hackathon Escolar](https://img.shields.io/badge/Hackathon-Escolar%202026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/eisalazarn-debug/astrogalaxy-)
-[![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow?style=for-the-badge)](https://github.com/eisalazarn-debug/astrogalaxy-)
+[![Hackathon Escolar](https://img.shields.io/badge/Hackathon-Escolar%202026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/jpinto-cloud/Astrogalaxy)
+
+[![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow?style=for-the-badge)](https://github.com/jpinto-cloud/Astrogalaxy)
 
 ---
 
@@ -148,6 +149,6 @@ Con AstroGalaxy proyectamos que en el primer año:
 
 **Eight Academy · Hackathon Escolar 2026 · Quito, Ecuador**
 
-
+[![Made with 💚](https://img.shields.io/badge/Made%20with-💚%20por%20el%20planeta-green?style=flat-square)](https://github.com/jpinto-cloud/Astrogalaxy)
 
 </div>
