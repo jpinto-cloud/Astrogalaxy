@@ -74,7 +74,7 @@ La app envía **notificaciones inteligentes** para recordar qué retos están ac
 
 </div>
 
-Cada NFT es una **insignia digital única** que los estudiantes acumulan en su perfil. Son prueba de su compromiso ambiental y pueden mostrarse en comunidad.
+Cada NFT es una **insignia digitales educativas únicas** que los estudiantes acumulan en su perfil. Son prueba de su compromiso ambiental y pueden mostrarse en comunidad.
 
 
 ## 🛠️ Tecnologías Utilizadas
@@ -84,7 +84,7 @@ Cada NFT es una **insignia digital única** que los estudiantes acumulan en su p
 | Tecnología | Uso en AstroGalaxy |
 |:---:|:---|
 | 🔗 **NFTs** | Insignias digitales únicas por cada logro ambiental completado |
-| 🤖 **Inteligencia Artificial** | Diseño adaptativo de la app, recomendaciones de retos personalizados | verificación de evidencia entregada 
+| 🤖 **Inteligencia Artificial** | Diseño adaptativo, recomendaciones de retos personalizados y verificación de evidencias entregadas |
 | 🎮 **Gamificación** | Plataforma educativa con rankings, retos y sistema de recompensas |
 | 📱 **App Móvil** | Acceso desde cualquier dispositivo para estudiantes y docentes |
 
@@ -147,6 +147,6 @@ Con AstroGalaxy proyectamos que en el primer año:
 
 **Eight Academy · Hackathon Escolar 2026 · Quito, Ecuador**
 
-[![Made with 💚](https://img.shields.io/badge/Made%20with-💚%20por%20el%20planeta-green?style=flat-square)](https://github.com/eisalazarn-debug/astrogalaxy-)
+[![Made with 💚](https://img.shields.io/badge/Made%20with-💚%20por%20el%20planeta-green?style=flat-square)](https://github.com/jpinto-cloud/Astrogalaxy)
 
 </div>
